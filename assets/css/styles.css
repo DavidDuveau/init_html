@@ -42,12 +42,22 @@ body {
 
 #burger-btn {
   display: none;
+  background-color: var(--dark);
+  color: var(--light);
+  width: 5em;
+  height: 5em;
+  padding: 0.5em;
+}
+
+#burger-btn span {
+  font-size: 2em;
 }
 
 /*regle de media media query*/
 @media screen and (max-width: 576px) {
-  .flex-container {
+  nav ul.flex-container {
     flex-direction: column;
+    display: none;
   }
 
   #burger-btn {
