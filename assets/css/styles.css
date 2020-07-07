@@ -40,6 +40,14 @@ body {
   flex-direction: row;
 }
 
+/*regle de media media query*/
+
+@media screen and (max-width: 576px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
 nav {
   color: var(--light);
 }
