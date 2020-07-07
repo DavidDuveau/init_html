@@ -40,11 +40,18 @@ body {
   flex-direction: row;
 }
 
-/*regle de media media query*/
+#burger-btn {
+  display: none;
+}
 
+/*regle de media media query*/
 @media screen and (max-width: 576px) {
   .flex-container {
     flex-direction: column;
+  }
+
+  #burger-btn {
+    display: block;
   }
 }
 
@@ -194,7 +201,6 @@ footer nav ul li a:hover {
   display: none;
   list-style-type: none;
   position: absolute;
-  z-index: inherit;
 }
 
 .drop-ctnt li a {
