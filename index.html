@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<!-- Elément head : instructions envoyées au navigateur -->
+
+<head>
+  <meta charset="utf-8">
+  <title>Découvrir le HTML</title>
+
+  <!--Feuille de style pour la page-->
+  <link href="./assets/css/styles.css" rel="stylesheet">
+
+  <!--Seconde feuille de style pour les logos-->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+<!--
+        Element body : contenu visible dans la fenêtre du navigateur
+        Le contenu sera traité et affiché par le navigateur
+    -->
+
+<body>
+  <header>
+
+    <h1>Découvrir le HTML</h1>
+
+    <p>
+      L'histoire du
+      <!--
+                    abbr avec l'attribut title pour donner la signification
+                    de l'abbréviation définie (ici HTML <=> Hyper Text Markup Language)
+                -->
+      <abbr title="Hyper Text Markup Language">HTML</abbr>
+      à travers les âges
+    </p>
+
+    <nav class="bg-dark">
+      <!-- Element qui regroupe des balises de navigation -->
+      <ul class="flex-container">
+        <!-- Conteneur de liste-->
+
+        <li>
+          <a href="#" title="home" class="btn bg-dark"><span class="icon-home3"></span>Accueil
+          </a>
+        </li>
+
+        <!-- Lien interne vers une section-->
+        <li>
+          <a href="section-html.html" target="new" title="HTML la référence" class="btn bg-dark"><span
+              class="icon-html-five"></span>HTML
+          </a>
+        </li>
+
+        <li>
+          <a href="#" title="CSS la référence">
+            <a class="btn bg-dark" href="#" title="CSS la référence"><span class="icon-css3"></span>CSS
+            </a>
+        </li>
+        <li class="btn dropdown">
+          Contacts
+          <div>
+            <ul class="drop-ctnt">
+              <li>
+                <a href="tel:0522336699" title="click to call">Téléphone</a>
+              </li>
+
+              <li>
+                <a href="mailto:tot@tartempio.com?subject=Contact us" title="Send an e-mail">Mail</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Contenu principal d'une page / unique dans un document -->
+    <section id="section-html">
+      <header>
+        <h2>Le langage HTML</h2>
+        <p>
+          Le <strong>langage HTML</strong> sert à définir le sens des contenus d'une page.
+          <em>Il n'est en aucun cas responsable de l'enrichissement</em> de ces contenus.
+        </p>
+      </header>
+      <article>
+        <header>
+          <h3>Deux familles de balises HTML</h3>
+        </header>
+        <p>
+          Les balises bloc définissent un rectangle occupant
+          la totalité de la largeur disponible dans le navigateur.
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet architecto consequuntur nobis nemo
+          doloremque velit iure excepturi, repellendus illo delectus a doloribus eaque explicabo impedit dolores, fuga
+          facilis repudiandae accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae est doloremque
+          magnam, eum hic molestias quia maiores. Numquam iste, atque architecto reprehenderit facilis quo, aut,
+          voluptatum maxime omnis ipsum in?
+        </p>
+        <a href="section-html.html" class="btn bg-dark" target="new">En savoir plus...</a>
+        <footer>
+          <cite title="w3c.org">
+            <a href="https://www.w3.org" title="W3C" target="new">
+              Bloc tags
+            </a>
+          </cite>
+        </footer>
+      </article>
+    </section>
+    <section id="section-css">
+      <header>
+        <h2>Le langage CSS</h2>
+        <p>
+          Le langage CSS est responsable de la forme des contenus.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus sit ad excepturi iure cupiditate laudantium
+          nemo quasi itaque maiores adipisci et vitae nulla ratione impedit quidem sequi, repellat suscipit possimus!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo repudiandae dignissimos, blanditiis possimus
+          ipsam natus! Dolorum minus cumque magnam porro ipsum necessitatibus? Cupiditate fugiat voluptatem alias autem
+          minima, voluptatum maiores! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt molestiae
+          blanditiis harum aliquam quo impedit, nostrum laborum adipisci, earum minus vero! Minus odio quam eum possimus
+          natus qui dolor nesciunt!
+        </p>
+      </header>
+    </section>
+  </main>
+  <footer class="bg-dark">
+    <nav>
+      <h3>Nos réseaux sociaux</h3>
+      <ul>
+        <li>
+          <a href="https://facebook.com" target="_new" title="Follow Us"><span class="icon-facebook2"></span>
+            Facebook
+          </a>
+        </li>
+
+        <li>
+          <a href="https://twitter.com" target="_new" title="Follow Us"><span class="icon-twitter"></span>
+            Twitter
+          </a>
+        </li>
+
+        <li>
+          <a href="https://linked.com" target="_new" title="Follow Us"><span class="icon-linkedin"></span>
+            Linkedin
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+
+</html><!-- Fin du document HTML -->

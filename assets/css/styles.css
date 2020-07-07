@@ -1,0 +1,203 @@
+/**
+* : => désigne un "pseudo élement"
+**/
+:root {
+  --title-color: rgb(200, 89, 10);
+  --main-color: #000;
+  --main-font-size: 1.5em;
+
+  /**
+  *   Couleurs Bootstrap
+  **/
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --danger: #dc3545;
+  --warning: #ffc107;
+  --info: #17a2b4;
+  --dark: #343a40;
+  --light: #ffffff;
+}
+
+/*
+* Global styles
+*   CSS Rule : selector { property: property_value; }
+*/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  /* em correspond à l'unité de référence définie dans le navigateur : 16px */
+  font-size: var(--main-font-size);
+  color: var(--main-color);
+}
+
+/**
+* Sur toutes les listes des documents HTML on supprime les puces
+**/
+.flex-container {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+nav {
+  color: var(--light);
+}
+/**
+* On veut définir la couleur #000 et enlever le soulignement
+*   sur tous les liens qui sont dans un LI, lui même dans un UL, lui même dans un NAV
+*   Le caractère "espace" désigne les "enfants de"
+**/
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+}
+
+body header nav ul {
+  padding: 0;
+}
+
+nav ul li a.btn {
+  transition: color 0.4s 0s ease-in, background-color 0.3s 0.1s ease-in; /** Définit comment passer à l'état final **/
+}
+nav ul li a.btn:hover {
+  /** Etat final c'est ici **/
+  color: var(--dark);
+  background-color: var(--light);
+}
+
+nav ul li.btn {
+  transition: color 0.4s 0s ease-in, background-color 0.3s 0.1s ease-in; /** Définit comment passer à l'état final **/
+}
+
+nav ul li.btn:hover {
+  /** Etat final c'est ici **/
+  color: var(--dark);
+  background-color: var(--light);
+}
+
+abbr {
+  text-decoration: none;
+  font-weight: bold;
+}
+/**
+* Le caractère "," permet de factoriser une règle (associer la règle à plusieurs sélecteurs)
+*   h1 ET h2 seront orange
+**/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--title-color);
+}
+
+/**
+* Sélecteurs "class"
+**/
+
+.btn {
+  width: 6em;
+  display: inline-block; /** Affiche un élément sous la forme d'un bloc en ligne **/
+  /*padding-left: 0.5em; 
+  padding-right: 0.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;*/
+  padding: 1em 0.5em 1em 0.5em;
+}
+
+.bg-light {
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+.bg-dark {
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+.shadowed {
+  box-shadow: var(--secondary) 1px 3px;
+}
+
+section {
+  height: 100vh;
+}
+
+section#section-html {
+  background-color: var(--info);
+}
+#page-html section {
+  background-color: var(--light);
+}
+
+#page-html h1,
+#page-html h2 {
+  color: var(--info);
+}
+
+#section-css {
+  background-color: var(--warning);
+}
+
+body footer {
+  padding-left: 0.5em;
+}
+body footer nav h3 {
+  color: var(--light);
+}
+body footer nav ul {
+  padding: 0;
+  display: block;
+  list-style-type: none;
+}
+
+body footer nav {
+  padding-bottom: 0.2em;
+}
+
+body footer a {
+  color: var(--light);
+  text-decoration: none;
+}
+span[class^="icon-"] {
+  margin-right: 0.4em;
+}
+footer nav ul li a {
+  transition: color 0.2s 0.1s ease-in;
+}
+
+footer nav ul li a:hover {
+  color: var(--info);
+}
+
+.dropdown {
+  text-align: center;
+  padding-left: 0;
+}
+
+.dropdown:hover .drop-ctnt {
+  display: block;
+}
+
+.drop-ctnt {
+  display: none;
+  list-style-type: none;
+  position: absolute;
+  z-index: inherit;
+}
+
+.drop-ctnt li a {
+  width: 6em;
+  display: inline-block; /** Affiche un élément sous la forme d'un bloc en ligne **/
+  padding: 1em 0.5em 1em 0.5em;
+  background-color: var(--dark);
+  color: var(--light);
+  transition: color 0s 0s ease-in;
+}
+
+.drop-ctnt li a:hover {
+  background-color: var(--secondary);
+}
