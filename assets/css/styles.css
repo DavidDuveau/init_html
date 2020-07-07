@@ -53,18 +53,6 @@ body {
   font-size: 3em;
 }
 
-/*regle de media media query*/
-@media screen and (max-width: 576px) {
-  nav ul.flex-container {
-    flex-direction: column;
-    display: none;
-  }
-
-  #burger-btn {
-    display: block;
-  }
-}
-
 nav {
   color: var(--light);
 }
@@ -224,4 +212,21 @@ footer nav ul li a:hover {
 
 .drop-ctnt li a:hover {
   background-color: var(--secondary);
+}
+
+/*regle de media media query*/
+@media screen and (max-width: 576px) {
+  nav ul.flex-container {
+    flex-direction: column;
+    display: none;
+  }
+
+  #burger-btn {
+    display: block;
+  }
+}
+
+nav button div {
+  display: flex;
+  justify-content: center;
 }

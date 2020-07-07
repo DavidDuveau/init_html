@@ -24,11 +24,11 @@
     -->
 
 <body>
-  <header>
+  <header class="row">
 
-    <h1>Découvrir le HTML</h1>
+    <h1 class="col-12 col-xl-4">Découvrir le HTML</h1>
 
-    <p>
+    <p class="col-12 col-xl-4">
       L'histoire du
       <!--
                     abbr avec l'attribut title pour donner la signification
@@ -38,14 +38,17 @@
       à travers les âges
     </p>
 
-    <nav class="bg-dark">
+    <nav class="bg-dark col-12">
       <!--
         burger menu buton display only when width <= 576px
       -->
 
       <button id="burger-btn">
-        <span class="icon-menu"></span>
+        <div>
+          <span class="icon-menu"></span>
+        </div>
       </button>
+
 
       <!--No display of menu for width screen > 576px -->
       <!-- Element qui regroupe des balises de navigation -->
@@ -89,22 +92,26 @@
 
   <main class="row">
     <!-- Contenu principal d'une page / unique dans un document -->
-    <section id="section-html" class="col-6">
+    <section id="section-html" class="col-xl-6 col-12">
       <header>
         <h2>Le langage HTML</h2>
+
         <p>
           Le <strong>langage HTML</strong> sert à définir le sens des contenus d'une page.
           <em>Il n'est en aucun cas responsable de l'enrichissement</em> de ces contenus.
         </p>
       </header>
+
       <article>
         <header>
           <h3>Deux familles de balises HTML</h3>
         </header>
+
         <p>
           Les balises bloc définissent un rectangle occupant
           la totalité de la largeur disponible dans le navigateur.
         </p>
+
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet architecto consequuntur nobis nemo
           doloremque velit iure excepturi, repellendus illo delectus a doloribus eaque explicabo impedit dolores, fuga
@@ -112,7 +119,9 @@
           magnam, eum hic molestias quia maiores. Numquam iste, atque architecto reprehenderit facilis quo, aut,
           voluptatum maxime omnis ipsum in?
         </p>
+
         <a href="section-html.html" class="btn bg-dark" target="new">En savoir plus...</a>
+
         <footer>
           <cite title="w3c.org">
             <a href="https://www.w3.org" title="W3C" target="new">
@@ -122,12 +131,15 @@
         </footer>
       </article>
     </section>
-    <section id="section-css" class="col-6">
+
+    <section id="section-css" class="col-xl-6 col-12">
       <header>
         <h2>Le langage CSS</h2>
+
         <p>
           Le langage CSS est responsable de la forme des contenus.
         </p>
+
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus sit ad excepturi iure cupiditate laudantium
           nemo quasi itaque maiores adipisci et vitae nulla ratione impedit quidem sequi, repellat suscipit possimus!
@@ -137,12 +149,14 @@
           blanditiis harum aliquam quo impedit, nostrum laborum adipisci, earum minus vero! Minus odio quam eum possimus
           natus qui dolor nesciunt!
         </p>
+
       </header>
     </section>
   </main>
   <footer class="bg-dark">
     <nav>
       <h3>Nos réseaux sociaux</h3>
+
       <ul>
         <li>
           <a href="https://facebook.com" target="_new" title="Follow Us"><span class="icon-facebook2"></span>
