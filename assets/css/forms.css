@@ -13,13 +13,17 @@ textarea {
   border: solid 1px #000;
 }
 
-#send-btn {
+#send-btn,
+#stop-btn {
   padding: 0.5em;
   border-radius: 0.2em;
-  transition: ease-in 0.4s 0s;
-  background-color: #28a745;
-  color: white;
+  transition: ease-in 0.2s 0s;
+  color: #28a745;
   border: none;
+}
+
+#stop-btn {
+  color: rgb(255, 73, 73);
 }
 
 input:hover,
@@ -28,7 +32,14 @@ textarea:hover {
 }
 
 #send-btn:hover {
-  background-color: #4b9e5d;
+  background-color: #28a745;
+  border: none;
+  color: white;
+}
+
+#stop-btn:hover {
+  background-color: rgb(255, 73, 73);
+  color: white;
 }
 
 form div {

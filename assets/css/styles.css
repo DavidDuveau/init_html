@@ -249,7 +249,7 @@ nav button div {
 .inner-modal {
   border-radius: 0.2em;
   position: relative;
-  background-color: lightcyan;
+  background-color: rgba(173, 216, 230, 0.8);
   height: 50%;
   width: 35%;
   margin: 0 auto;
