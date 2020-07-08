@@ -184,31 +184,37 @@
   <!--Template affichage contact mail-->
   <!-- <template id="form-template"> -->
 
-  <!--Formulaire => interaction avec la page (ensemble de champs ou contrôle de formulaire)-->
 
+  <div class="outer-modal">
+    <!--Boite pour modal outer recouvre inner contient le form-->
+    <div class="inner-modal">
+      <h2>Contacter notre service clien</h2>
+      <!--
+        Formulaire => interaction avec la page 
+        (ensemble de champs ou contrôle de formulaire)
+      -->
+      <form>
+        <div class="required row">
+          <input class="col-11" type="text" name="name-ctrl" id="name-ctrl" placeholder="Name" required>
+        </div>
 
-  <form>
-    <div class="required row">
-      <input class="col-11 col-xl-3" type="text" name="name-ctrl" id="name-ctrl" placeholder="Name" required>
+        <div class="required row">
+          <input class="col-11" type="email" name="email-ctrl" id="email-ctrl" placeholder="email@example.com" required>
+        </div>
+
+        <div class="required row">
+          <textarea class="col-11" name="object-ctrl" id="object-ctrl" cols="20" rows="5"
+            placeholder="Votre demande"></textarea>
+        </div>
+
+        <div class="row">
+          <button class="col-11" type="submit" id="send-btn">
+            Envoyer
+          </button>
+        </div>
+      </form>
     </div>
-
-    <div class="required row">
-      <input class="col-11 col-xl-3" type="email" name="email-ctrl" id="email-ctrl" placeholder="email@example.com"
-        required>
-    </div>
-
-    <div class="row">
-      <textarea class="col-11 col-xl-3" name="object-ctrl" id="object-ctrl" cols="20" rows="5"
-        placeholder="Votre demande"></textarea>
-    </div>
-
-    <div class="row">
-      <button class="col-11 col-xl-3" type=" submit" id="send-btn">
-        Envoyer
-      </button>
-    </div>
-  </form>
-
+  </div>
   <!--</template> -->
   <!--Fin template contact mail-->
 

@@ -234,3 +234,26 @@ nav button div {
   display: flex;
   justify-content: center;
 }
+
+/*modal design*/
+
+.outer-modal {
+  position: fixed; /* je positionne l'élément pas le navigateur*/
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(173, 216, 230, 0.6);
+}
+
+.inner-modal {
+  border-radius: 0.2em;
+  position: relative;
+  background-color: lightcyan;
+  height: 50%;
+  width: 35%;
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left: 0.5em;
+}
