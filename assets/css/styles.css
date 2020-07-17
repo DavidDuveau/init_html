@@ -190,35 +190,9 @@ footer nav ul li a:hover {
   color: var(--info);
 }
 
-/* 
-.dropdown {
-  text-align: center;
-  padding-left: 0;
-}
-
-.dropdown:hover .drop-ctnt {
-  display: block;
-}
-
-.drop-ctnt {
-  display: none;
-  list-style-type: none;
-  position: absolute;
-}
-
-.drop-ctnt li a {
-  width: 6em;
-  display: inline-block; //Affiche un élément sous la forme d'un bloc en ligne
-  padding: 1em 0.5em 1em 0.5em;
-  background-color: var(--dark);
-  color: var(--light);
-  transition: color 0s 0s ease-in;
-}
-
-.drop-ctnt li a:hover {
-  background-color: var(--secondary);
-} 
-*/
+/* .navbar {
+  background-color: var(--success) !important;
+} */
 
 /*regle de media media query*/
 @media screen and (max-width: 576px) {
