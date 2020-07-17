@@ -41,55 +41,49 @@
         à travers les âges
       </p>
 
-      <nav class="bg-dark col-12">
-        <!--
-        burger menu buton display only when width <= 576px
-      -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark col-12">
+        <a class="navbar-brand" href="#">Menu</a>
 
-        <button id="burger-btn">
-          <div>
-            <span class="icon-menu"></span>
-          </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
 
-
-        <!--No display of menu for width screen > 576px -->
-        <!-- Element qui regroupe des balises de navigation -->
-        <ul class="flex-container">
-          <!-- Conteneur de liste-->
-
-          <li>
-            <a href="#" title="home" class="btn bg-dark"><span class="icon-home3"></span>Accueil
-            </a>
-          </li>
-
-          <!-- Lien interne vers une section-->
-          <li>
-            <a href="section-html.html" target="new" title="HTML la référence" class="btn bg-dark"><span
-                class="icon-html-five"></span>HTML
-            </a>
-          </li>
-
-          <li>
-            <a href="#" title="CSS la référence">
-              <a class="btn bg-dark" href="#" title="CSS la référence"><span class="icon-css3"></span>CSS
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#" title="Home">
+                <span class="icon-home3"></span>Accueil
               </a>
-          </li>
-          <li class="btn dropdown">
-            Contacts
-            <div>
-              <ul class="drop-ctnt">
-                <li>
-                  <a href="tel:0522336699" title="click to call">Téléphone</a>
-                </li>
+            </li>
 
-                <li>
-                  <a href="#" title="Send an e-mail" onclick="openModal()">Mail</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="section-html.html" target="_blank" title="Référence en HTML">
+                <span class="icon-html-five"></span>HTML
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#" title="Référence en CSS">
+                <span class="icon-css3"></span>CSS
+              </a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Contact
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="tel:0522336699" title="click to call">Téléphone</a>
+
+                <div class="dropdown-divider"></div>
+
+                <a class="dropdown-item" href="#" title="Send an e-mail" onclick="openModal()">Mail</a>
+              </div>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
