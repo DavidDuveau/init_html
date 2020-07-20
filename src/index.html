@@ -1,0 +1,238 @@
+<!doctype html>
+<html>
+<!-- Elément head : instructions envoyées au navigateur -->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum=1.0,vuser-scalable=no">
+
+
+  <title>Découvrir le HTML</title>
+
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+  <!--Feuille de style pour la page-->
+  <link href="./assets/css/styles.css" rel="stylesheet">
+
+  <!--Seconde feuille de style pour les logos-->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="stylesheet" href="/assets/css/forms.css">
+
+</head>
+<!--
+        Element body : contenu visible dans la fenêtre du navigateur
+        Le contenu sera traité et affiché par le navigateur
+    -->
+
+<body>
+  <div class="container">
+    <header class="row">
+
+      <h1 class="col-12 col-xl-4">Découvrir le HTML</h1>
+
+      <p class="col-12 col-xl-4">
+        L'histoire du
+        <!--
+                    abbr avec l'attribut title pour donner la signification
+                    de l'abbréviation définie (ici HTML <=> Hyper Text Markup Language)
+                -->
+        <abbr title="Hyper Text Markup Language">HTML</abbr>
+        à travers les âges
+      </p>
+
+      <nav class="bg-dark col-12">
+        <!--
+        burger menu buton display only when width <= 576px
+      -->
+
+        <button id="burger-btn">
+          <div>
+            <span class="icon-menu"></span>
+          </div>
+        </button>
+
+
+        <!--No display of menu for width screen > 576px -->
+        <!-- Element qui regroupe des balises de navigation -->
+        <ul class="flex-container">
+          <!-- Conteneur de liste-->
+
+          <li>
+            <a href="#" title="home" class="btn bg-dark"><span class="icon-home3"></span>Accueil
+            </a>
+          </li>
+
+          <!-- Lien interne vers une section-->
+          <li>
+            <a href="/section-html.html" target="new" title="HTML la référence" class="btn bg-dark"><span
+                class="icon-html-five"></span>HTML
+            </a>
+          </li>
+
+          <li>
+            <a href="#" title="CSS la référence">
+              <a class="btn bg-dark" href="#" title="CSS la référence"><span class="icon-css3"></span>CSS
+              </a>
+          </li>
+          <li class="btn dropdown">
+            Contacts
+            <div>
+              <ul class="drop-ctnt">
+                <li>
+                  <a href="tel:0522336699" title="click to call">Téléphone</a>
+                </li>
+
+                <li>
+                  <a href="#" title="Send an e-mail" onclick="openModal()">Mail</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="row">
+      <!-- Contenu principal d'une page / unique dans un document -->
+      <section id="section-html" class="col-xl-6 col-12">
+        <header>
+          <h2>Le langage HTML</h2>
+
+          <p>
+            Le <strong>langage HTML</strong> sert à définir le sens des contenus d'une page.
+            <em>Il n'est en aucun cas responsable de l'enrichissement</em> de ces contenus.
+          </p>
+        </header>
+
+        <article>
+          <header>
+            <h3>Deux familles de balises HTML</h3>
+          </header>
+
+          <p>
+            Les balises bloc définissent un rectangle occupant
+            la totalité de la largeur disponible dans le navigateur.
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet architecto consequuntur nobis nemo
+            doloremque velit iure excepturi, repellendus illo delectus a doloribus eaque explicabo impedit dolores, fuga
+            facilis repudiandae accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae est
+            doloremque
+            magnam, eum hic molestias quia maiores. Numquam iste, atque architecto reprehenderit facilis quo, aut,
+            voluptatum maxime omnis ipsum in?
+          </p>
+
+          <a href="section-html.html" class="btn bg-dark" target="new">En savoir plus...</a>
+
+          <footer>
+            <cite title="w3c.org">
+              <a href="https://www.w3.org" title="W3C" target="new">
+                Bloc tags
+              </a>
+            </cite>
+          </footer>
+        </article>
+      </section>
+
+      <section id="section-css" class="col-xl-6 col-12">
+        <header>
+          <h2>Le langage CSS</h2>
+
+          <p>
+            Le langage CSS est responsable de la forme des contenus.
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus sit ad excepturi iure cupiditate
+            laudantium
+            nemo quasi itaque maiores adipisci et vitae nulla ratione impedit quidem sequi, repellat suscipit possimus!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo repudiandae dignissimos, blanditiis possimus
+            ipsam natus! Dolorum minus cumque magnam porro ipsum necessitatibus? Cupiditate fugiat voluptatem alias
+            autem
+            minima, voluptatum maiores! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt molestiae
+            blanditiis harum aliquam quo impedit, nostrum laborum adipisci, earum minus vero! Minus odio quam eum
+            possimus
+            natus qui dolor nesciunt!
+          </p>
+
+        </header>
+      </section>
+    </main>
+    <footer class="bg-dark">
+      <nav>
+        <h3>Nos réseaux sociaux</h3>
+
+        <ul>
+          <li>
+            <a href="https://facebook.com" target="_new" title="Follow Us">
+              <span class="icon-facebook2"></span>
+              Facebook
+            </a>
+          </li>
+
+          <li>
+            <a href="https://twitter.com" target="_new" title="Follow Us">
+              <span class="icon-twitter"></span>
+              Twitter
+            </a>
+          </li>
+
+          <li>
+            <a href="https://linked.com" target="_new" title="Follow Us">
+              <span class="icon-linkedin"></span>
+              Linkedin
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </div>
+  <!--Template affichage contact mail-->
+  <template id="form-template">
+    <!--
+      Boite pour modal outer recouvre 
+      inner contient le form
+    -->
+    <div class="outer-modal">
+      <div class="inner-modal">
+        <h2>Contacter notre service clien</h2>
+        <!--
+        Formulaire => interaction avec la page 
+        (ensemble de champs ou contrôle de formulaire)
+      -->
+        <form>
+          <div class="required row">
+            <input class="col-11" type="text" name="name-ctrl" id="name-ctrl" placeholder="Name" required>
+          </div>
+
+          <div class="required row">
+            <input class="col-11" type="email" name="email-ctrl" id="email-ctrl" placeholder="email@example.com"
+              required>
+          </div>
+
+          <div class="row">
+            <textarea class="col-11" name="object-ctrl" id="object-ctrl" cols="20" rows="5"
+              placeholder="Votre demande"></textarea>
+          </div>
+
+          <div class="row">
+            <button class="col-7" type="submit" id="send-btn">
+              Envoyer
+            </button>
+
+            <button class="col-4" type="button" id="stop-btn" onclick="quitModal()">
+              Annuler
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </template>
+  <!--Fin template contact mail-->
+
+  <script src="/assets/js/modal.js"></script>
+</body>
+
+</html><!-- Fin du document HTML -->
