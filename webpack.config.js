@@ -2,8 +2,9 @@ const path = require("path");
 const webpack = require("webpack");
 
 //charger les plugin webpack
-const htmlWebpackPlugin = require("html-webpack-plugin");
-const copyWebpackPlugin = require("copy-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 //main webpack config
 module.exports = {
@@ -17,7 +18,36 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.js$/,
+
+        exclude: "/node_modules",
+
+        use: {
+          loader: "babel-loader",
+        },
+      },
+
+      {
+        test: /\.sc|ass$/,
+
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+          },
+
+          {
+            loader: "css-loader",
+          },
+
+          {
+            loader: "sass-loader",
+          },
+        ],
+      },
+
+      {
         test: /\.html$/i, //expression régulière toute les fichiers finissant par .html .HTML etc non case sensitive /i
+
         loader: "html-loader",
       },
     ],
@@ -25,13 +55,25 @@ module.exports = {
 
   //plugins...
   plugins: [
-    new copyWebpackPlugin({
+    new CopyWebpackPlugin({
       patterns: [
         {
           from: "src/*.html",
           flatten: true,
         },
       ],
+    }),
+    new HtmlWebpackPlugin({
+      template: "src/index.html",
+      minify: {
+        removeComments: true, //remove html comments
+        collapseWhitespace: true, //remove space
+        removeEmptyAttributes: true,
+      },
+    }),
+    new MiniCssExtractPlugin({
+      filename: "./src/css/[name].css",
+      chunFilename: "./src/css/[id].css",
     }),
   ],
 };
